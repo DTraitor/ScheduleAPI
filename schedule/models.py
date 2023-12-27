@@ -30,7 +30,7 @@ class Lesson(models.Model):
         OTHER = 5, 'Other'
 
     # Lesson type (e.g. "Lecture")
-    type = models.PositiveIntegerField(choices=LessonType.choices)
+    kind = models.PositiveIntegerField(choices=LessonType.choices)
 
     class RepeatType(models.IntegerChoices):
         EVERY_YEAR = 0, 'Every year'

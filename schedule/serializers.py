@@ -12,4 +12,4 @@ class LessonSerializer(serializers.ModelSerializer):
     class Meta:
         model = Lesson
         fields = ('id', 'name', 'short_name', 'description', 'teacher', 'link',
-                  'location', 'type', 'repeat_type', 'repeat_interval')
+                  'location', 'kind', 'repeat_type', 'repeat_interval')
