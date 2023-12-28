@@ -5,7 +5,7 @@ from django.db import models
 class Lesson(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     # Lesson name
-    name = models.CharField(max_length=30, primary_key=True)
+    name = models.CharField(max_length=30)
     # Lesson short name
     short_name = models.CharField(max_length=10)
     # Lesson description
@@ -47,7 +47,7 @@ class Lesson(models.Model):
 class Group(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     # Faculty abbreviation + group number (e.g. "FCSE 224")
-    name = models.CharField(max_length=30, primary_key=True)
+    name = models.CharField(max_length=30)
     # Group name (e.g. "SE-224B")
     short_name = models.CharField(max_length=10)
     # List of lessons for this group
