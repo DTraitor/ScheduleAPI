@@ -37,8 +37,6 @@ class Lesson(models.Model):
         EVERY_MONTH = 1, 'Every month'
         EVERY_WEEK = 2, 'Every week'
         EVERY_DAY = 3, 'Every day'
-        EVERY_HOUR = 4, 'Every hour'
-        EVERY_MINUTE = 5, 'Every minute'
 
     # Repeat type (e.g. "Every week")
     repeat_type = models.PositiveIntegerField(choices=RepeatType.choices)
