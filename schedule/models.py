@@ -17,9 +17,9 @@ class Lesson(models.Model):
     # Lesson location
     location = models.CharField(max_length=30, null=True)
     # Lesson start time
-    start_time = models.DateTimeField()
+    start_time = models.DateField()
     # Lesson end time
-    end_time = models.DateTimeField()
+    end_time = models.DateField()
 
     class LessonType(models.IntegerChoices):
         LECTURE = 0, 'Lecture'
